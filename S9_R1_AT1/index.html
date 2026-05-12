@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro Simples</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f2f5; display: flex; justify-content: center; padding: 50px; }
+        .caixa { background: white; padding: 30px; border-radius: 10px; width: 350px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #333; }
+        
+        /* Estilo das áreas de digitar */
+        input, textarea { 
+            width: 100%; 
+            padding: 12px; 
+            margin-top: 5px; 
+            margin-bottom: 15px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-sizing: border-box; /* Garante que não passe da largura */
+        }
+        
+        button { 
+            width: 100%; 
+            background: #ff89ba; 
+            color: white; 
+            border: none; 
+            padding: 12px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="caixa">
+    <h2>Pedido</h2>
+    
+    <form action="form.php" method="POST">
+        <label>Seu Nome:</label>
+        <input type="text" name="nome" placeholder="Digite aqui..." required>
+
+        <label>Seu E-mail:</label>
+        <input type="email" name="email" placeholder="email@exemplo.com" required>
+
+        <label>CEP:</label>
+        <input type="text" name="cep" placeholder="00000-000" required>
+
+        <label>Endereço Completo:</label>
+        <textarea name="endereco" rows="3" placeholder="Rua, número, bairro..."></textarea>
+
+        <button type="submit">Enviar Informações</button>
+    </form>
+</div>
+
+</body>
+</html>
