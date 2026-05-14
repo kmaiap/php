@@ -30,14 +30,14 @@
         }
         button {
             padding: 10px 20px;
-            background-color: #007BFF;
+            background-color: #fc86b7;
             color: white;
             border: none;
             border-radius: 4px;
             cursor: pointer;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #fc86b7;
         }
         .resultado {
             margin-top: 20px;
@@ -47,14 +47,14 @@
         }
         span {
             font-weight: bold;
-            color: #007BFF;
+            color: #ff5ba0;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2>Digite o</h2>
+    <h2>Digite o número</h2>
     <form method="POST">
         <input type="number" name="numero" placeholder="Ex: 10" required>
         <br>
